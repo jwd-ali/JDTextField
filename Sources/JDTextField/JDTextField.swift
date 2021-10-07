@@ -88,9 +88,14 @@ open class JDTextField: UITextField {
 
 private extension JDTextField {
 
+    /// A problem appeard when I add extra option to the field to hide or show user's inputs (isSecureTextEntry).
+    /// When 'isSecureTextEntry == true' on the first field and I try to switch on another app just block UI and its seems
+    /// like deadlock is happened. I found that program stops on 97 line.
+    /// After commenting a line problem was resolved for me and app continued working well as expected.
+    
   func setColors() {
     allLayers.forEach { $0.strokeColor = shapeColor.cgColor }
-    self.textColor = tintColor
+    // >>> potential deadlock >>> self.textColor = tintColor
     floatingLabel.textColor = isFirstResponder ? tintColor : shapeColor
     errorLabel.textColor = errorLabelColor
   }
