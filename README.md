@@ -1,6 +1,6 @@
 <img src="https://github.com/jwd-ali/TidalTestProject/blob/master/images/header/header.png">
 <img align="right" src="https://github.com/jwd-ali/JDTextField/blob/main/Images/JDTextField.gif" width="480" />
-<p><h1 align="left">JDCircularProgress</h1></p>
+<p><h1 align="left">JDTextField</h1></p>
 
 [![CI Status](https://travis-ci.org/jwd-ali/RingPieChart.svg)](https://travis-ci.org/jwd-ali/RingPieChart)
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/RingPieChart.svg?style=flat)](https://cocoapods.org/pods/RingPieChart)
